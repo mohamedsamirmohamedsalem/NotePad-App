@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationUsageDescription</key>
+	<string>NotePad need to access your location for storing notes with it</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>NotePad need to access your location for storing notes with it</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>NotePad need to access your galary for uploading image to NotePad App</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

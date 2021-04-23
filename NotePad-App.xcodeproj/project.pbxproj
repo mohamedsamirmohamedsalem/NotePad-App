@@ -3,18 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		605C0FCD2633220D005D010B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C0FCC2633220D005D010B /* AppDelegate.swift */; };
-		605C0FCF2633220D005D010B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C0FCE2633220D005D010B /* SceneDelegate.swift */; };
-		605C0FD12633220D005D010B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C0FD02633220D005D010B /* ViewController.swift */; };
-		605C0FD42633220D005D010B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605C0FD22633220D005D010B /* Main.storyboard */; };
-		605C0FD62633220E005D010B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605C0FD52633220E005D010B /* Assets.xcassets */; };
-		605C0FD92633220E005D010B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605C0FD72633220E005D010B /* LaunchScreen.storyboard */; };
 		605C0FE42633220E005D010B /* NotePad_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C0FE32633220E005D010B /* NotePad_AppTests.swift */; };
 		605C0FEF2633220E005D010B /* NotePad_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C0FEE2633220E005D010B /* NotePad_AppUITests.swift */; };
+		605C102126332233005D010B /* NotePadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C100326332232005D010B /* NotePadTask.swift */; };
+		605C102226332233005D010B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C100526332232005D010B /* AppDelegate.swift */; };
+		605C102326332233005D010B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C100626332232005D010B /* SceneDelegate.swift */; };
+		605C102426332233005D010B /* DetailsVC+LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C100926332232005D010B /* DetailsVC+LocationManager.swift */; };
+		605C102526332233005D010B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C100A26332232005D010B /* DetailsViewController.swift */; };
+		605C102626332233005D010B /* DetailsVC+ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C100B26332232005D010B /* DetailsVC+ImagePickerManager.swift */; };
+		605C102726332233005D010B /* NSDataEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C100D26332232005D010B /* NSDataEx.swift */; };
+		605C102826332233005D010B /* CLocationEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C100E26332232005D010B /* CLocationEX.swift */; };
+		605C102926332233005D010B /* RealmDataManuipilation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C100F26332232005D010B /* RealmDataManuipilation.swift */; };
+		605C102A26332233005D010B /* TableViewRegisteration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C101026332232005D010B /* TableViewRegisteration.swift */; };
+		605C102B26332233005D010B /* TaskListVC+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C101226332232005D010B /* TaskListVC+TableViewDataSource.swift */; };
+		605C102C26332233005D010B /* TaskListVC+TableViewDelgate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C101326332232005D010B /* TaskListVC+TableViewDelgate.swift */; };
+		605C102D26332233005D010B /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C101426332232005D010B /* TaskListViewController.swift */; };
+		605C102E26332233005D010B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605C101626332232005D010B /* Assets.xcassets */; };
+		605C103026332233005D010B /* NotePadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 605C101A26332232005D010B /* NotePadTableViewCell.xib */; };
+		605C103126332233005D010B /* NotePadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C101B26332233005D010B /* NotePadTableViewCell.swift */; };
+		605C103226332233005D010B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605C101D26332233005D010B /* LaunchScreen.storyboard */; };
+		605C103326332233005D010B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605C101F26332233005D010B /* Main.storyboard */; };
+		756DA5FBF778957576A964D7 /* Pods_NotePad_App_NotePad_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4C524BDE9A1CF2AB2DA37A /* Pods_NotePad_App_NotePad_AppUITests.framework */; };
+		7785AAAA2B815DFAB76C999D /* Pods_NotePad_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E23EA2AB313084D97F8BC7 /* Pods_NotePad_App.framework */; };
+		BAB42B85226F2DD1F7B6586E /* Pods_NotePad_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDE2D73E692339E7E9A8DC2 /* Pods_NotePad_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +50,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3271BCA87FA62C30CA14EC3B /* Pods-NotePad-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePad-App.debug.xcconfig"; path = "Target Support Files/Pods-NotePad-App/Pods-NotePad-App.debug.xcconfig"; sourceTree = "<group>"; };
+		424211C1040052E9C51F5BB5 /* Pods-NotePad-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePad-AppTests.release.xcconfig"; path = "Target Support Files/Pods-NotePad-AppTests/Pods-NotePad-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		605C0FC92633220D005D010B /* NotePad-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotePad-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		605C0FCC2633220D005D010B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		605C0FCE2633220D005D010B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		605C0FD02633220D005D010B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		605C0FD32633220D005D010B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		605C0FD52633220E005D010B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		605C0FD82633220E005D010B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		605C0FDA2633220E005D010B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		605C0FDF2633220E005D010B /* NotePad-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NotePad-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		605C0FE32633220E005D010B /* NotePad_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePad_AppTests.swift; sourceTree = "<group>"; };
 		605C0FE52633220E005D010B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		605C0FEA2633220E005D010B /* NotePad-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NotePad-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		605C0FEE2633220E005D010B /* NotePad_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePad_AppUITests.swift; sourceTree = "<group>"; };
 		605C0FF02633220E005D010B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		605C100326332232005D010B /* NotePadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotePadTask.swift; sourceTree = "<group>"; };
+		605C100526332232005D010B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		605C100626332232005D010B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		605C100926332232005D010B /* DetailsVC+LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetailsVC+LocationManager.swift"; sourceTree = "<group>"; };
+		605C100A26332232005D010B /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		605C100B26332232005D010B /* DetailsVC+ImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetailsVC+ImagePickerManager.swift"; sourceTree = "<group>"; };
+		605C100D26332232005D010B /* NSDataEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataEx.swift; sourceTree = "<group>"; };
+		605C100E26332232005D010B /* CLocationEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLocationEX.swift; sourceTree = "<group>"; };
+		605C100F26332232005D010B /* RealmDataManuipilation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataManuipilation.swift; sourceTree = "<group>"; };
+		605C101026332232005D010B /* TableViewRegisteration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewRegisteration.swift; sourceTree = "<group>"; };
+		605C101226332232005D010B /* TaskListVC+TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskListVC+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		605C101326332232005D010B /* TaskListVC+TableViewDelgate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskListVC+TableViewDelgate.swift"; sourceTree = "<group>"; };
+		605C101426332232005D010B /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		605C101626332232005D010B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		605C101726332232005D010B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		605C101A26332232005D010B /* NotePadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotePadTableViewCell.xib; sourceTree = "<group>"; };
+		605C101B26332233005D010B /* NotePadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotePadTableViewCell.swift; sourceTree = "<group>"; };
+		605C101E26332233005D010B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		605C102026332233005D010B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61E23EA2AB313084D97F8BC7 /* Pods_NotePad_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotePad_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE55432A5E6DB79F9EB2F67 /* Pods-NotePad-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePad-App.release.xcconfig"; path = "Target Support Files/Pods-NotePad-App/Pods-NotePad-App.release.xcconfig"; sourceTree = "<group>"; };
+		CBDE2D73E692339E7E9A8DC2 /* Pods_NotePad_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotePad_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91924020C97526EB6D843B0 /* Pods-NotePad-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePad-AppTests.debug.xcconfig"; path = "Target Support Files/Pods-NotePad-AppTests/Pods-NotePad-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA5D2B34C97DA0542C5A55E9 /* Pods-NotePad-App-NotePad-AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePad-App-NotePad-AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-NotePad-App-NotePad-AppUITests/Pods-NotePad-App-NotePad-AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCEB151419C458B1FCFF77B4 /* Pods-NotePad-App-NotePad-AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotePad-App-NotePad-AppUITests.release.xcconfig"; path = "Target Support Files/Pods-NotePad-App-NotePad-AppUITests/Pods-NotePad-App-NotePad-AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA4C524BDE9A1CF2AB2DA37A /* Pods_NotePad_App_NotePad_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotePad_App_NotePad_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7785AAAA2B815DFAB76C999D /* Pods_NotePad_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB42B85226F2DD1F7B6586E /* Pods_NotePad_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756DA5FBF778957576A964D7 /* Pods_NotePad_App_NotePad_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +122,8 @@
 				605C0FE22633220E005D010B /* NotePad-AppTests */,
 				605C0FED2633220E005D010B /* NotePad-AppUITests */,
 				605C0FCA2633220D005D010B /* Products */,
+				C0A9781108D8373E531E6500 /* Pods */,
+				F880C53A502B9DF086072583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +140,11 @@
 		605C0FCB2633220D005D010B /* NotePad-App */ = {
 			isa = PBXGroup;
 			children = (
-				605C0FCC2633220D005D010B /* AppDelegate.swift */,
-				605C0FCE2633220D005D010B /* SceneDelegate.swift */,
-				605C0FD02633220D005D010B /* ViewController.swift */,
-				605C0FD22633220D005D010B /* Main.storyboard */,
-				605C0FD52633220E005D010B /* Assets.xcassets */,
-				605C0FD72633220E005D010B /* LaunchScreen.storyboard */,
-				605C0FDA2633220E005D010B /* Info.plist */,
+				605C100726332232005D010B /* Controllers */,
+				605C100426332232005D010B /* Core */,
+				605C100226332232005D010B /* Model */,
+				605C101526332232005D010B /* SupportingFiles */,
+				605C101826332232005D010B /* Views */,
 			);
 			path = "NotePad-App";
 			sourceTree = "<group>";
@@ -128,6 +167,123 @@
 			path = "NotePad-AppUITests";
 			sourceTree = "<group>";
 		};
+		605C100226332232005D010B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				605C100326332232005D010B /* NotePadTask.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		605C100426332232005D010B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				605C100526332232005D010B /* AppDelegate.swift */,
+				605C100626332232005D010B /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		605C100726332232005D010B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				605C100826332232005D010B /* DetailsViewController */,
+				605C100C26332232005D010B /* Extensions */,
+				605C101126332232005D010B /* TaskListViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		605C100826332232005D010B /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				605C100926332232005D010B /* DetailsVC+LocationManager.swift */,
+				605C100A26332232005D010B /* DetailsViewController.swift */,
+				605C100B26332232005D010B /* DetailsVC+ImagePickerManager.swift */,
+			);
+			path = DetailsViewController;
+			sourceTree = "<group>";
+		};
+		605C100C26332232005D010B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				605C100D26332232005D010B /* NSDataEx.swift */,
+				605C100E26332232005D010B /* CLocationEX.swift */,
+				605C100F26332232005D010B /* RealmDataManuipilation.swift */,
+				605C101026332232005D010B /* TableViewRegisteration.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		605C101126332232005D010B /* TaskListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				605C101226332232005D010B /* TaskListVC+TableViewDataSource.swift */,
+				605C101326332232005D010B /* TaskListVC+TableViewDelgate.swift */,
+				605C101426332232005D010B /* TaskListViewController.swift */,
+			);
+			path = TaskListViewController;
+			sourceTree = "<group>";
+		};
+		605C101526332232005D010B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				605C101626332232005D010B /* Assets.xcassets */,
+				605C101726332232005D010B /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		605C101826332232005D010B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				605C101926332232005D010B /* Cells */,
+				605C101C26332233005D010B /* StoryBoard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		605C101926332232005D010B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				605C101A26332232005D010B /* NotePadTableViewCell.xib */,
+				605C101B26332233005D010B /* NotePadTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		605C101C26332233005D010B /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				605C101D26332233005D010B /* LaunchScreen.storyboard */,
+				605C101F26332233005D010B /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		C0A9781108D8373E531E6500 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3271BCA87FA62C30CA14EC3B /* Pods-NotePad-App.debug.xcconfig */,
+				7AE55432A5E6DB79F9EB2F67 /* Pods-NotePad-App.release.xcconfig */,
+				DA5D2B34C97DA0542C5A55E9 /* Pods-NotePad-App-NotePad-AppUITests.debug.xcconfig */,
+				DCEB151419C458B1FCFF77B4 /* Pods-NotePad-App-NotePad-AppUITests.release.xcconfig */,
+				D91924020C97526EB6D843B0 /* Pods-NotePad-AppTests.debug.xcconfig */,
+				424211C1040052E9C51F5BB5 /* Pods-NotePad-AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F880C53A502B9DF086072583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61E23EA2AB313084D97F8BC7 /* Pods_NotePad_App.framework */,
+				FA4C524BDE9A1CF2AB2DA37A /* Pods_NotePad_App_NotePad_AppUITests.framework */,
+				CBDE2D73E692339E7E9A8DC2 /* Pods_NotePad_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 605C0FF32633220E005D010B /* Build configuration list for PBXNativeTarget "NotePad-App" */;
 			buildPhases = (
+				5CB2D09ECAB11534A89A55FF /* [CP] Check Pods Manifest.lock */,
 				605C0FC52633220D005D010B /* Sources */,
 				605C0FC62633220D005D010B /* Frameworks */,
 				605C0FC72633220D005D010B /* Resources */,
+				0955B4D6C4828A23704A867B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 605C0FF62633220E005D010B /* Build configuration list for PBXNativeTarget "NotePad-AppTests" */;
 			buildPhases = (
+				01B32EF505ED33329079C885 /* [CP] Check Pods Manifest.lock */,
 				605C0FDB2633220E005D010B /* Sources */,
 				605C0FDC2633220E005D010B /* Frameworks */,
 				605C0FDD2633220E005D010B /* Resources */,
@@ -170,9 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 605C0FF92633220E005D010B /* Build configuration list for PBXNativeTarget "NotePad-AppUITests" */;
 			buildPhases = (
+				F43172748463DA49EF0089B2 /* [CP] Check Pods Manifest.lock */,
 				605C0FE62633220E005D010B /* Sources */,
 				605C0FE72633220E005D010B /* Frameworks */,
 				605C0FE82633220E005D010B /* Resources */,
+				6D62D11A7E736AB813894F5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +392,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				605C0FD92633220E005D010B /* LaunchScreen.storyboard in Resources */,
-				605C0FD62633220E005D010B /* Assets.xcassets in Resources */,
-				605C0FD42633220D005D010B /* Main.storyboard in Resources */,
+				605C103326332233005D010B /* Main.storyboard in Resources */,
+				605C103226332233005D010B /* LaunchScreen.storyboard in Resources */,
+				605C103026332233005D010B /* NotePadTableViewCell.xib in Resources */,
+				605C102E26332233005D010B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +415,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01B32EF505ED33329079C885 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotePad-AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0955B4D6C4828A23704A867B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotePad-App/Pods-NotePad-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotePad-App/Pods-NotePad-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotePad-App/Pods-NotePad-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CB2D09ECAB11534A89A55FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotePad-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D62D11A7E736AB813894F5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotePad-App-NotePad-AppUITests/Pods-NotePad-App-NotePad-AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotePad-App-NotePad-AppUITests/Pods-NotePad-App-NotePad-AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotePad-App-NotePad-AppUITests/Pods-NotePad-App-NotePad-AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F43172748463DA49EF0089B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotePad-App-NotePad-AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		605C0FC52633220D005D010B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				605C0FD12633220D005D010B /* ViewController.swift in Sources */,
-				605C0FCD2633220D005D010B /* AppDelegate.swift in Sources */,
-				605C0FCF2633220D005D010B /* SceneDelegate.swift in Sources */,
+				605C102C26332233005D010B /* TaskListVC+TableViewDelgate.swift in Sources */,
+				605C102D26332233005D010B /* TaskListViewController.swift in Sources */,
+				605C102A26332233005D010B /* TableViewRegisteration.swift in Sources */,
+				605C102726332233005D010B /* NSDataEx.swift in Sources */,
+				605C102426332233005D010B /* DetailsVC+LocationManager.swift in Sources */,
+				605C102626332233005D010B /* DetailsVC+ImagePickerManager.swift in Sources */,
+				605C102226332233005D010B /* AppDelegate.swift in Sources */,
+				605C103126332233005D010B /* NotePadTableViewCell.swift in Sources */,
+				605C102126332233005D010B /* NotePadTask.swift in Sources */,
+				605C102826332233005D010B /* CLocationEX.swift in Sources */,
+				605C102326332233005D010B /* SceneDelegate.swift in Sources */,
+				605C102B26332233005D010B /* TaskListVC+TableViewDataSource.swift in Sources */,
+				605C102926332233005D010B /* RealmDataManuipilation.swift in Sources */,
+				605C102526332233005D010B /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +572,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		605C0FD22633220D005D010B /* Main.storyboard */ = {
+		605C101D26332233005D010B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				605C0FD32633220D005D010B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		605C0FD72633220E005D010B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				605C0FD82633220E005D010B /* Base */,
+				605C101E26332233005D010B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		605C101F26332233005D010B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				605C102026332233005D010B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,12 +709,13 @@
 		};
 		605C0FF42633220E005D010B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3271BCA87FA62C30CA14EC3B /* Pods-NotePad-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A3GDCJZQY;
-				INFOPLIST_FILE = "NotePad-App/Info.plist";
+				INFOPLIST_FILE = "NotePad-App/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +729,13 @@
 		};
 		605C0FF52633220E005D010B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE55432A5E6DB79F9EB2F67 /* Pods-NotePad-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A3GDCJZQY;
-				INFOPLIST_FILE = "NotePad-App/Info.plist";
+				INFOPLIST_FILE = "NotePad-App/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +749,7 @@
 		};
 		605C0FF72633220E005D010B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91924020C97526EB6D843B0 /* Pods-NotePad-AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +772,7 @@
 		};
 		605C0FF82633220E005D010B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424211C1040052E9C51F5BB5 /* Pods-NotePad-AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +795,7 @@
 		};
 		605C0FFA2633220E005D010B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA5D2B34C97DA0542C5A55E9 /* Pods-NotePad-App-NotePad-AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +816,7 @@
 		};
 		605C0FFB2633220E005D010B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCEB151419C458B1FCFF77B4 /* Pods-NotePad-App-NotePad-AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
