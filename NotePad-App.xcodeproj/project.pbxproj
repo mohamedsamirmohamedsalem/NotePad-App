@@ -197,8 +197,8 @@
 		605C100826332232005D010B /* DetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				605C100926332232005D010B /* DetailsVC+LocationManager.swift */,
 				605C100A26332232005D010B /* DetailsViewController.swift */,
+				605C100926332232005D010B /* DetailsVC+LocationManager.swift */,
 				605C100B26332232005D010B /* DetailsVC+ImagePickerManager.swift */,
 			);
 			path = DetailsViewController;

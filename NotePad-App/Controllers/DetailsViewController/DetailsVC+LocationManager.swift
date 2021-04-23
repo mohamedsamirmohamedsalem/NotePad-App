@@ -39,7 +39,7 @@ extension DetailsViewController : CLLocationManagerDelegate {
             self.location = getCurrentLocation()
             displaySuccessLocationAlert()
         case .restricted, .denied:
-            displayCancelLocationAlert()
+            self.displayCancelLAlert()
         case .notDetermined :requestAuthorization()
         default:requestAuthorization()
             

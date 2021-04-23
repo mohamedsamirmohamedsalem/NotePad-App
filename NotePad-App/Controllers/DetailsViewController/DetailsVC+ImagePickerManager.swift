@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Photos
+
 
 extension DetailsViewController : UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
@@ -17,8 +19,8 @@ extension DetailsViewController : UINavigationControllerDelegate, UIImagePickerC
             imagePicker.delegate = self
             imagePicker.allowsEditing = true
             imagePicker.sourceType = .savedPhotosAlbum
+            authorizePermission(imagePicker)
             
-            present(imagePicker, animated: true, completion: nil)
         }
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -32,5 +34,22 @@ extension DetailsViewController : UINavigationControllerDelegate, UIImagePickerC
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     func imagePickerControllerDidCancel(_ picker:UIImagePickerController){
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func authorizePermission(_ imagePicker: UIImagePickerController){
+        
+        PHPhotoLibrary.requestAuthorization { status in
+            switch status {
+            case .authorized:   DispatchQueue.main.async{
+                self.present(imagePicker, animated: true, completion: nil)
+            }
+            case .restricted,.denied: DispatchQueue.main.async{
+                self.displayCancelLAlert()
+            }
+            default: break
+            }
+            
+        }
+        
     }
 }

@@ -106,7 +106,7 @@ class DetailsViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    func displayCancelLocationAlert(){
+    func displayCancelLAlert(){
         self.isLocationSelected = false
         let alertController = UIAlertController(title: "TITLE", message: "Please go to Settings and turn on the permissions", preferredStyle: .alert)
         
